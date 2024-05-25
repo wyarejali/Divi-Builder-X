@@ -1,0 +1,30 @@
+.dibx_divider_wrapper {
+    display: flex;
+}
+
+.dibx_divider_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dibx_divider_wrapper.dibx_divider-flex-start {
+    align-items: flex-start;
+}
+.dibx_divider_wrapper.dibx_divider-center {
+    align-items: center;
+}
+.dibx_divider_wrapper.dibx_divider-flex-end {
+    align-items: flex-end;
+}
+
+.dibx_divider-before,
+.dibx_divider-after {
+    flex-grow: 1;
+}
+
+.dibx_divider-title {
+    margin: 0;
+    padding: 0;
+    flex-shrink: 1;
+}

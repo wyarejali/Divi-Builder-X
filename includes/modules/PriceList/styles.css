@@ -1,0 +1,27 @@
+.dibx_pricelist-heading {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+}
+
+.dibx_pricelist-title,
+.dibx_pricelist-price {
+    margin: 0;
+    padding: 0;
+}
+
+.dibx_pricelist-divider {
+    flex-grow: 1;
+}
+
+.dibx_pricelist-image-wrapper {
+    display: flex;
+}
+
+.dibx_pricelist-content {
+    flex: 1;
+}
+
+.dibx_pricelist-image img {
+    display: block;
+}

@@ -4,6 +4,9 @@ if ( ! class_exists( 'ET_Builder_Element' ) ) {
 	return;
 }
 
+
+require_once DIBX_DIVI_BUILDER_X_DIR . 'includes/modules/Core/Divi-Builder-X-core.php';
+
 $module_files = glob( __DIR__ . '/modules/*/*.php' );
 
 // Load custom Divi Builder modules

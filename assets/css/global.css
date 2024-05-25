@@ -1,0 +1,42 @@
+/* Default css */
+.dibx_icon {
+    font-style: normal !important;
+    line-height: 1;
+    font-family: ETmodules;
+    speak: none;
+    font-weight: 400;
+    -webkit-font-feature-settings: normal;
+    font-feature-settings: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    font-size: 96px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    direction: ltr;
+    font-style: normal !important;
+}
+
+.dibx_btn {
+    display: inline-block;
+}
+
+.dibx_flip_card-container,
+.dibx_icon,
+.dibx_divider_icon,
+.dibx_divider-title,
+.dibx_image_magnifier-image,
+.dibx_image_magnifier-lens-dev,
+.dibx_image_magnifier-lens,
+.dibx_pricelist-item-wrapper,
+.dibx_pricelist-image,
+.dibx_pricelist_item,
+.dian_slider_icon,
+.dibx_icon_list_item {
+    border-style: solid;
+}
+
+body *[class^='dibx'] {
+    border-style: solid;
+}

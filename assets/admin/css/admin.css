@@ -1,0 +1,39 @@
+/* Divi Nations Folder Color */
+.et-db #et-boc .et-l .et-fb-modules-list li.Divi.Builder.X.et_pb_folder,
+.et-db #et-boc .et-fb-modules-list li[class^='dibx'],
+.et-db #et-boc .et-l .et-fb-modules-list li[class^='dibx'] {
+    background: linear-gradient(
+        120deg,
+        #020024 0%,
+        #090979 35%,
+        #00d4ff 100%
+    ) !important;
+    color: #fff !important;
+}
+
+.et-db #et-boc .et-l .et-fb-modules-list li.Divi.Builder.X.et_pb_folder:hover,
+.et-db #et-boc .et-fb-modules-list li[class^='dibx']:hover,
+.et-db #et-boc .et-l .et-fb-modules-list li[class^='dibx']:hover {
+    background: linear-gradient(
+        145deg,
+        #020024 0%,
+        #090979 35%,
+        #00d4ff 100%
+    ) !important;
+}
+
+.et-db #et-boc .et-fb-modules-list li[class^='dibx'] .et-fb-icon,
+.et-db #et-boc .et-l .et-fb-modules-list li[class^='dibx'] .et-fb-icon {
+    margin: 0 auto !important;
+}
+
+.et-db #et-boc .et-fb-modules-list li[class^='dibx'] svg,
+.et-db #et-boc .et-l .et-fb-modules-list li[class^='dibx'] svg {
+    fill: transparent !important;
+}
+
+.et-db #et-boc .et-l .et-fb-modules-list li.Divi.Builder.X.et_pb_folder:before {
+    content: url(../../icons/divi-builder-x.svg) !important;
+    font-family: none !important;
+    color: #00bae3 !important;
+}

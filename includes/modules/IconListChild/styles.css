@@ -1,0 +1,13 @@
+.dibx_icon_list-item {
+    display: flex;
+    align-items: center;
+}
+
+.dibx_icon_list-title {
+    margin: 0;
+    padding: 0;
+}
+
+.dibx_icon_list-icon i.dibx_icon {
+    display: block;
+}
