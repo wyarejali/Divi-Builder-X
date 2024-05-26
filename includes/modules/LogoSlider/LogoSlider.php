@@ -174,7 +174,7 @@ class DIBX_Logo_Slider extends DIBX_Module_Core {
                     'min'         => 1,
                     'max'         => 100,
                 ),
-                'default'         => 3,
+                'default'         => 4,
                 'fixed_unit'      => '',
                 'validate_unit'   => false,
                 'toggle_slug'   => 'slider_settings',
@@ -288,7 +288,7 @@ class DIBX_Logo_Slider extends DIBX_Module_Core {
                 'label'          => esc_html__( 'Icon Color', 'dibx-divi-builder-x' ),
                 'description'    => esc_html__( 'Define arrows icon color', 'dibx-divi-builder-x' ),
                 'type'           => 'color-alpha',
-                'default'        => '#000000',
+                'default'        => '#ffffff',
                 'tab_slug'       => 'advanced',
                 'toggle_slug'    => 'arrows',
                 'hover'          => 'tabs',
@@ -337,7 +337,7 @@ class DIBX_Logo_Slider extends DIBX_Module_Core {
                 'tab_slug'             => 'advanced',
                 'toggle_slug'          => 'arrows',
                 'sub_toggle'           => 'back',
-                'default'              => '0px|0px|0px|0px',
+                'default'              => '10px|10px|10px|10px',
                 'mobile_options'       => true,
                 'show_if'         => array(
                     'is_arrows'   => 'on'
@@ -434,10 +434,10 @@ class DIBX_Logo_Slider extends DIBX_Module_Core {
                     'border_radii'  => '%%order_class%% .dibx_slider_icon',
                     'border_styles' => '%%order_class%% .dibx_slider_icon',
                 ),
-                'important'         => false,
+                'important'         => true,
             ),
             'defaults'              => array(
-                'border_radii'      => 'on|0px|0px|0px|0px',
+                'border_radii'      => 'on|50px|50px|50px|50px',
                 'border_styles'     => array(
                     'width'         => '0px',
                     'color'         => $et_accent_color,
@@ -571,11 +571,13 @@ class DIBX_Logo_Slider extends DIBX_Module_Core {
                 'option_slug'   => 'icon_bg',
                 'property'      => 'background',
                 'selector'      => '%%order_class%% .dibx_slider_icon',
+                'hover'      => '%%order_class%% .dibx_slider_icon:hover',
             ],
             [
                 'option_slug'   => 'icon_color',
                 'property'      => 'color',
                 'selector'      => '%%order_class%% .dibx_slider_icon i.dibx_icon',
+                'hover'      => '%%order_class%% .dibx_slider_icon:hover i.dibx_icon',
             ],
             [
                 'option_slug'   => 'icon_padding',

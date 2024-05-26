@@ -5,11 +5,13 @@ class LogoSliderChild extends Component {
 
     render() {
         return (
-            <img
-                className="dibx_logo_slider-item"
-                src={this.props.image}
-                alt={this.props.image_alt}
-            />
+            <div className="dibx_logo_slider-img-wrapper">
+                <img
+                    className="dibx_logo_slider-item"
+                    src={this.props.image}
+                    alt={this.props.image_alt}
+                />
+            </div>
         );
     }
 }

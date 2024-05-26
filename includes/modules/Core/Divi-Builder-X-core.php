@@ -419,15 +419,9 @@ class DIBX_Module_Core extends ET_Builder_Module {
     public function dibx_get_slick_slider_settings() {
 
         $autoplay            = $this->props['autoplay']      === 'on' ? true: false;
-        $autoplay_tablet     = $this->props['autoplay_tablet'] ? $this->check_on_off_options($this->props['autoplay_tablet']) : $autoplay;
-        $autoplay_phone      = $this->props['autoplay_phone'] ? $this->check_on_off_options($this->props['autoplay_phone']) : ( $autoplay_tablet ? $autoplay_tablet : $autoplay);
         $autoplaySpeed       = intval($this->props['autoplay_delay']);
         $dots                = $this->check_on_off_options($this->props['is_dots']);
-        $dots_tablet         = $this->props['is_dots_tablet'] ? $this->check_on_off_options($this->props['is_dots_tablet']) : $dots;
-        $dots_phone          = $this->props['is_dots_phone'] ? $this->check_on_off_options($this->props['is_dots_phone']) : ($dots_tablet ? $dots_tablet : $dots);
         $arrows              = $this->check_on_off_options($this->props['is_arrows']);
-        $arrows_tablet       = $this->props['is_arrows_tablet'] ? $this->check_on_off_options($this->props['is_arrows_tablet']) : $arrows;
-        $arrows_phone        = $this->props['is_arrows_phone'] ? $this->check_on_off_options($this->props['is_arrows_phone']) : ($arrows_tablet ? $arrows_tablet : $arrows);
         $centerMode          = $this->props['centered_mode'] === 'on' ? true: false;
         $draggable           = $this->props['is_grab']       === 'on' ? true: false;
         $easing              = 'linear';
@@ -436,13 +430,19 @@ class DIBX_Module_Core extends ET_Builder_Module {
         $rtl                 = $this->check_on_off_options($this->props['rtl']);
         $slidesToScroll      = intval($this->props['slide_to_scroll']);
         $slidesToShow        = intval($this->props['slide_to_show']);
-        $slidesToShow_tablet = intval($this->props['slide_to_show_tablet'] ? $this->props['slide_to_show_tablet'] : '2');
-        $slidesToShow_phone  = intval($this->props['slide_to_show_phone'] ? $this->props['slide_to_show_phone'] : '1');
         $speed               = intval($this->props['slider_speed']);
         $prevArrow           = $this->render_prev_icon();
         $nextArrow           = $this->render_next_icon();
         $spaceBetween        = $this->props['space_between'];
         
+        $autoplay_tablet     = $this->props['autoplay_tablet'] ? $this->check_on_off_options($this->props['autoplay_tablet']) : $autoplay;
+        $autoplay_phone      = $this->props['autoplay_phone'] ? $this->check_on_off_options($this->props['autoplay_phone']) : ( $autoplay_tablet ? $autoplay_tablet : $autoplay);
+        $dots_tablet         = $this->props['is_dots_tablet'] ? $this->check_on_off_options($this->props['is_dots_tablet']) : $dots;
+        $dots_phone          = $this->props['is_dots_phone'] ? $this->check_on_off_options($this->props['is_dots_phone']) : ($dots_tablet ? $dots_tablet : $dots);
+        $arrows_tablet       = $this->props['is_arrows_tablet'] ? $this->check_on_off_options($this->props['is_arrows_tablet']) : $arrows;
+        $arrows_phone        = $this->props['is_arrows_phone'] ? $this->check_on_off_options($this->props['is_arrows_phone']) : ($arrows_tablet ? $arrows_tablet : $arrows);
+        $slidesToShow_tablet = intval($this->props['slide_to_show_tablet'] ? $this->props['slide_to_show_tablet'] : '3');
+        $slidesToShow_phone  = intval($this->props['slide_to_show_phone'] ? $this->props['slide_to_show_phone'] : '2');
 
         $settings = [
             'spaceBetween'   => $spaceBetween,

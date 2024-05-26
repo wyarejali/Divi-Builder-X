@@ -31,9 +31,10 @@ class DIBX_Assets
                 'deps'    => ['jquery'],
                 'enqueue' => true
             ],
-            'divi-nations-admin-script' => [
-                'src'     => DIBX_DIVI_BUILDER_X_URL . '/assets/admin/js/admin.js',
-                'version' => filemtime(DIBX_DIVI_BUILDER_X_PATH . '/assets/admin/js/admin.js'),
+
+            'dibx-marquee-script' => [
+                'src'     => DIBX_DIVI_BUILDER_X_URL . '/assets/js/dibx-marquee-text.js',
+                'version' => filemtime(DIBX_DIVI_BUILDER_X_PATH . '/assets/js/dibx-marquee-text.js'),
                 'deps'    => ['jquery'],
                 'enqueue' => false
             ],
@@ -78,7 +79,7 @@ class DIBX_Assets
             'dibx-slick' => [
                 'src'     => DIBX_DIVI_BUILDER_X_URL . '/assets/lib/slick/slick.css',
                 'version' => filemtime(DIBX_DIVI_BUILDER_X_PATH . '/assets/lib/slick/slick.css'),
-                'enqueue' => true
+                'enqueue' => false
             ],
         ];
     }

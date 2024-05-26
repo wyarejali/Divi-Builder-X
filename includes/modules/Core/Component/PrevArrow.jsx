@@ -7,11 +7,11 @@ class PrevArrow extends Component {
 
         return (
             <button
-                className={`${className} dina_slider_icon dina_prev_icon`}
+                className={`${className} dibx_slider_icon dibx_prev_icon`}
                 onClick={onClick}
                 style={{ ...style, display: 'block' }}
             >
-                <i className="dina_icon">{renderIcon(icon)}</i>
+                <i className="dibx_icon">{renderIcon(icon)}</i>
             </button>
         );
     }

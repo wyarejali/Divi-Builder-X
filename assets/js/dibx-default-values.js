@@ -42,6 +42,9 @@ jQuery(function($) {
                 icon: '&#xe052;||divi||400',
                 title: title,
             }),
+            (window.ETBuilderBackend.defaults.dibx_marquee_text = {
+                text: title,
+            }),
             (window.ETBuilderBackend.defaults.dibx_icon_box = {
                 icon: '&#xe105;||divi||400',
                 title: title,

@@ -7,11 +7,11 @@ class NextArrow extends Component {
 
         return (
             <button
-                className={`${className} dina_slider_icon dina_next_icon`}
+                className={`${className} dibx_slider_icon dibx_next_icon`}
                 onClick={onClick}
                 style={{ ...style, display: 'block' }}
             >
-                <i className="dina_icon">{renderIcon(icon)}</i>
+                <i className="dibx_icon">{renderIcon(icon)}</i>
             </button>
         );
     }

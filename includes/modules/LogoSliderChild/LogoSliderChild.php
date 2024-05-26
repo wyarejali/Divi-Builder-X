@@ -1,13 +1,13 @@
 <?php
 
-class dibx_Logo_Slider_Child extends dibx_Divi_Nations_Modules_Core {
+class DIBX_Logo_Slider_Child extends DIBX_Module_Core {
 
     public function init() {
         $this->name                     = esc_html__( 'Price Item', 'dibx-divi-builder-x' );
         $this->type                     = 'child';
         $this->slug                     = 'dibx_logo_slider_child';
-        $this->child_title_var          = 'title';
-        $this->child_title_fallback_var = 'admin_label';
+        $this->child_title_var          = 'Slider Item';
+        $this->child_title_fallback_var = 'Slider Item';
         $this->vb_support               = 'on';
 
         $this->settings_modal_toggles = array(
@@ -98,11 +98,13 @@ class dibx_Logo_Slider_Child extends dibx_Divi_Nations_Modules_Core {
     public function render($attrs, $render_slug, $content) {
 
         return sprintf(
-            '<img class="dibx_logo_slider-item" src="%1$s" alt="%2$s"/>',
+            '<div class="dibx_logo_slider-img-wrapper">
+                <img class="dibx_logo_slider-item" src="%1$s" alt="%2$s"/>
+            </div>',
             $this->props['image'],
             $this->props['image_alt']
         );
     }
 }
 
-new dibx_Logo_Slider_Child();
+new DIBX_Logo_Slider_Child();

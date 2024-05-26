@@ -7,12 +7,27 @@
     margin-bottom: 0 !important;
 }
 
+.dibx_logo_slider-img-wrapper {
+    text-align: center;
+}
+
 /* arrows */
 .slick-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
+    width: unset;
+    height: unset;
+    border-radius: 50px;
+}
+
+.dibx_slider_icon i.dibx_icon {
+    display: block;
+}
+
+.dibx_slider_icon:hover {
+    background: #4f60ff;
 }
 
 .dibx_logo_slider-container.show-arrow-on-hover .slick-arrow {
@@ -27,11 +42,11 @@
 }
 
 .dibx_logo_slider-container .dibx_prev_icon {
-    left: 15px;
+    left: 10px;
 }
 
 .dibx_logo_slider-container .dibx_next_icon {
-    right: 15px;
+    right: 10px;
 }
 
 /* dots */
@@ -61,4 +76,9 @@ ul.slick-dots li button {
     border: 0;
     outline: 0;
     transition: all 0.4s ease;
+}
+
+ul.slick-dots li button::before,
+.dibx_slider_icon::before {
+    content: unset !important;
 }
