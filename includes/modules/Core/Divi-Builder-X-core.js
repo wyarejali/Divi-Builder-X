@@ -323,10 +323,10 @@ export const dibxGetSlickSliderSettings = (props, prevArrow, nextArrow) => {
         slidesToShow = parseInt(props.slide_to_show),
         slidesToShowTablet = props.slide_to_show_tablet
             ? parseInt(props.slide_to_show_tablet)
-            : 2,
+            : 3,
         slidesToShowPhone = props.slide_to_show_phone
             ? parseInt(props.slide_to_show_phone)
-            : 1,
+            : 2,
         speed = parseInt(props.slider_speed);
     // arrows
 
