@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Divi Builder X
+Plugin Name: Divi Builder X Lite
 Plugin URI:  https://divibuilderx.unique-ui.com
 Description: Powerful Divi Nations to enhance your Divi website to the next level with 10+ fully functional modules.
 Version:     1.0.0
